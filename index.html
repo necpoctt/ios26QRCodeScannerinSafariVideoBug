@@ -1,29 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>iOS 26 Video Bug – Opened via Built-in QR Code Scanner in Safari</title>
-</head>
-<body>
-  <h1>iOS 26 Video Bug – Opened via Built-in QR Code Scanner in Safari</h1>
-  <p>
-    Steps to Reproduce:
-    <ol>
-      <li>On iOS 26 device, use the built-in Camera app to scan a QR code that points to:
-        https://relaxed-brioche-3fd908.netlify.app/</li>
-        (A minimal HTML page with a video element and MP4 source.)</li>
-      <li>Tap the banner that appears after scanning to open the page.</li>
-      <li>The video loads and plays normally on the first attempt.</li>
-      <li>Close the page, then scan the same QR code again and open it.</li>
-      <li>The video element shows the first frame but does not play.</li>
-      <li>If Safari cache is cleared, it works again (until the issue repeats).</li>
-    </ol>
-  </p>
-  <video controls width="320">
-    <source
-      src="https://3a7fc8cb-08a2-4be0-ad4d-4b9f58b6034c.mdnplay.dev/shared-assets/videos/flower.mp4"
-      type="video/mp4"
-    />
-  </video>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>iOS 26 Video Bug – Opened via Built-in QR Code Scanner in Safari</title>
+  </head>
+  <body>
+    <video controls width="320">
+      <source src="https://3a7fc8cb-08a2-4be0-ad4d-4b9f58b6034c.mdnplay.dev/shared-assets/videos/flower.mp4" type="video/mp4" />
+    </video>
+  </body>
 </html>
